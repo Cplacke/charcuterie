@@ -116,13 +116,14 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Write a few lines about each one. A paragraph describing a
                             feature will be enough. Keep you user engaged!
+                            <img class="mt-2 mx-auto" src="./assets/img/breakfast-board.jpg" />
                         </p>
                         </div>
                     </div>
                     </div>
                 </div>
                 <div class="flex flex-wrap items-center mt-32">
-                    <div class="w-full lg:w-5/12 px-4 mr-auto ml-auto">
+                    <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
                     <div
                         class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
                     >
