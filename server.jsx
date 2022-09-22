@@ -5,7 +5,7 @@
 /// <reference lib="deno.ns" />
 
 import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
-import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.20/mod.ts";
+import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.33/mod.ts";
 import { assetRouteHandler } from "./helpers/asset-resolution.ts";
 
 import { Page } from './page.jsx'
