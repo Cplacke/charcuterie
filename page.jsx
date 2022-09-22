@@ -141,7 +141,7 @@ export const Page = () => {
             <section class="pb-20 bg-gray-300 -mt-24">
                 <div class="container mx-auto px-4">
                 <div class="flex flex-wrap">
-                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="lg:pt-12 pt-6 w-full lg:w-4/12 px-4 text-center">
                     <div
                         class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
@@ -160,7 +160,7 @@ export const Page = () => {
                         </div>
                     </div>
                     </div>
-                    <div class="w-full md:w-4/12 px-4 text-center">
+                    <div class="w-full lg:w-4/12 px-4 text-center">
                     <div
                         class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
@@ -174,12 +174,12 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Keep you user engaged by providing meaningful information.
                             Remember that by this time, the user is curious.
-                            <img class="mt-2" src="./assets/img/charcute.jpg" />
+                            <img class="mt-2 my-auto" src="./assets/img/charcute.jpg" />
                         </p>
                         </div>
                     </div>
                     </div>
-                    <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="pt-6 w-full lg:w-4/12 px-4 text-center">
                     <div
                         class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
@@ -228,7 +228,7 @@ export const Page = () => {
                         >Check Tailwind Starter Kit!</a
                     >
                     </div>
-                    <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                    <div class="w-full lg:w-4/12 px-4 mr-auto ml-auto">
                     <div
                         class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
                     >
@@ -286,7 +286,7 @@ export const Page = () => {
                 </div>
                 <div class="container mx-auto px-4">
                 <div class="items-center flex flex-wrap">
-                    <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                    <div class="w-full lg:w-4/12 ml-auto mr-auto px-4">
                     <img
                         alt="..."
                         class="max-w-full rounded-lg shadow-lg"
@@ -777,7 +777,7 @@ export const Page = () => {
                 <div
                 class="flex flex-wrap items-center md:justify-between justify-center"
                 >
-                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="w-full lg:w-4/12 px-4 mx-auto text-center">
                     <div class="text-sm text-gray-600 font-semibold py-1">
                     Copyright © 2019 Tailwind Starter Kit by
                     <a
