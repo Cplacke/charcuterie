@@ -151,7 +151,7 @@ export const Page = () => {
                         >Check Tailwind Starter Kit!</a
                     >
                     </div>
-                    <div class="w-full lg:w-4/12 px-4 mr-auto ml-auto">
+                    <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                     <div
                         class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-teal-600"
                     >
@@ -216,7 +216,7 @@ export const Page = () => {
                         src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
                     />
                     </div>
-                    <div class="w-full lg:w-5/12 mt-4 ml-auto mr-auto px-4">
+                    <div class="w-full md:w-5/12 mt-4 ml-auto mr-auto px-4">
                     <div class="md:pr-12">
                         <div
                         class="text-teal-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-teal-300"
