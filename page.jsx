@@ -78,7 +78,7 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Children, adults, grandparents? Bring everyone together and find 
                             the enjoyment on each others faces
-                            <img class="mt-2" src="./assets/img/grad-2022.jpg" />
+                            <img class="mt-2 rounded-lg" src="./assets/img/grad-2022.jpg" />
                         </p>
                         </div>
                     </div>
@@ -97,12 +97,12 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Keep you user engaged by providing meaningful information.
                             Remember that by this time, the user is curious.
-                            <img class="mt-2 mx-auto" src="./assets/img/charcute.jpg" />
+                            <img class="mt-2 mx-auto rounded-full" src="./assets/img/charcute.jpg" />
                         </p>
                         </div>
                     </div>
                     </div>
-                    <div class="pt-6 w-full lg:w-4/12 px-4 text-center">
+                    <div class="pt-6 w-full md:w-4/12 px-4 text-center">
                     <div
                         class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
@@ -116,7 +116,7 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Write a few lines about each one. A paragraph describing a
                             feature will be enough. Keep you user engaged!
-                            <img class="mt-2 mx-auto" src="./assets/img/breakfast-board.jpg" />
+                            <img class="mt-2 mx-auto rounded-lg" src="./assets/img/breakfast-board.jpg" />
                         </p>
                         </div>
                     </div>
