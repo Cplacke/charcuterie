@@ -41,11 +41,11 @@ export class Page extends Component {
                             </p>
                         </div>
                     </div>
-                    <div class="bg-amber-200 px-8 py-4 rounded text-xl mx-auto block mt-12"
+                    <button class="bg-amber-200 px-8 py-4 rounded text-xl mx-auto block mt-12"
                         onClick={ () => window.document.querySelector('#order-form').scrollIntoView() }
                         onclick="document.querySelector('#order-form').scrollIntoView()"
                     > Order Now 
-                    </div>
+                    </button>
                     </div>
                     <div
                         class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
