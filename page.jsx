@@ -18,7 +18,7 @@ export const Page = () => {
                 class="relative lg:m-height-75 pt-16 pb-32 flex content-center items-center justify-center"
             >
                 <div class="absolute top-0 w-full h-full bg-center bg-cover"
-                    style="background-image: url('./assets/img/grad-2022.jpg');"
+                    style="background-image: url('./assets/img/grad.jpg');"
                 >
                 <span
                     id="blackOverlay"
@@ -78,7 +78,7 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Children, adults, grandparents? Bring everyone together and find 
                             the enjoyment on each others faces
-                            <img class="mt-2" src="./assets/img/grad-party.jpg" />
+                            <img class="mt-2" src="./assets/img/grad-2022.jpg" />
                         </p>
                         </div>
                     </div>
