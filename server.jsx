@@ -30,7 +30,7 @@ const requestHandler = async (req) => {
 
   // handle custom asset resolution
   if (pathname.includes("/assets/")) {
-    return assetRouteHandler(pathname);
+    return await assetRouteHandler(pathname);
   }
 
   const html = renderSSR(<App />);

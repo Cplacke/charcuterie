@@ -4834,6 +4834,10 @@ select {
   .lg\:w-9\/12 {
     width: 75%;
   }
+
+  .lg\:m-height-75 {
+    min-height: 75vh;
+  }
 }
 
 @media (min-width: 1280px) {

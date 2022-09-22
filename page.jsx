@@ -4,98 +4,21 @@
 /// <reference lib="dom.asynciterable" />
 /// <reference lib="deno.ns" />
 import { h } from "https://deno.land/x/nano_jsx@v0.0.20/mod.ts";
+import { 
+    Navigation, 
+    ContactUs,
+} from "./components/index.ts";
 
 export const Page = () => {
     return (
         <body class="text-gray-800 antialiased">
-            <nav
-                class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
-            >
-            <div
-                class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-            >
-                <div
-                    class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-                >
-                    <a
-                        class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                        href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                        >Tailwind Starter Kit</a
-                    ><button
-                        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-                        type="button"
-                        onclick="toggleNavbar('example-collapse-navbar')"
-                    >
-                        <i class="text-white fas fa-bars"></i>
-                    </button>
-                </div>
-                <div
-                class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-                id="example-collapse-navbar"
-                >
-                <ul class="flex flex-col lg:flex-row list-none mr-auto">
-                    <li class="flex items-center">
-                    <a
-                        class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                        href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
-                        ><i
-                        class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-                        ></i>
-                        Docs</a
-                    >
-                    </li>
-                </ul>
-                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-                    <li class="flex items-center">
-                    <a
-                        class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                        href="#pablo"
-                        ><i
-                        class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
-                        ></i
-                        ><span class="lg:hidden inline-block ml-2">Share</span></a
-                    >
-                    </li>
-                    <li class="flex items-center">
-                    <a
-                        class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                        href="#pablo"
-                        ><i
-                        class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
-                        ></i
-                        ><span class="lg:hidden inline-block ml-2">Tweet</span></a
-                    >
-                    </li>
-                    <li class="flex items-center">
-                    <a
-                        class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                        href="#pablo"
-                        ><i
-                        class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
-                        ></i
-                        ><span class="lg:hidden inline-block ml-2">Star</span></a
-                    >
-                    </li>
-                    <li class="flex items-center">
-                    <button
-                        class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                        type="button"
-                        style="transition: all 0.15s ease 0s;"
-                    >
-                        <i class="fas fa-arrow-alt-circle-down"></i> Download
-                    </button>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            </nav>
+            <Navigation/>
             <main>
             <div
-                class="relative pt-16 pb-32 flex content-center items-center justify-center"
-                style="min-height: 75vh;"
+                class="relative lg:m-height-75 pt-16 pb-32 flex content-center items-center justify-center"
             >
                 <div class="absolute top-0 w-full h-full bg-center bg-cover"
-                    style="background-image: url('./assets/img/grad.jpg');"
+                    style="background-image: url('./assets/img/grad-2022.jpg');"
                 >
                 <span
                     id="blackOverlay"
@@ -155,7 +78,7 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Children, adults, grandparents? Bring everyone together and find 
                             the enjoyment on each others faces
-                            <img class="mt-2" src="./assets/img/kids.jpg" />
+                            <img class="mt-2" src="./assets/img/grad-party.jpg" />
                         </p>
                         </div>
                     </div>
@@ -174,7 +97,7 @@ export const Page = () => {
                         <p class="mt-2 mb-4 text-gray-600">
                             Keep you user engaged by providing meaningful information.
                             Remember that by this time, the user is curious.
-                            <img class="mt-2 my-auto" src="./assets/img/charcute.jpg" />
+                            <img class="mt-2 mx-auto" src="./assets/img/charcute.jpg" />
                         </p>
                         </div>
                     </div>
@@ -199,7 +122,7 @@ export const Page = () => {
                     </div>
                 </div>
                 <div class="flex flex-wrap items-center mt-32">
-                    <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                    <div class="w-full lg:w-5/12 px-4 mr-auto ml-auto">
                     <div
                         class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
                     >
@@ -230,11 +153,11 @@ export const Page = () => {
                     </div>
                     <div class="w-full lg:w-4/12 px-4 mr-auto ml-auto">
                     <div
-                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-teal-600"
                     >
                         <img
                         alt="..."
-                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                        src="./assets/img/kids.jpg"
                         class="w-full align-middle rounded-t-lg"
                         />
                         <blockquote class="relative p-8 mb-4">
@@ -247,7 +170,7 @@ export const Page = () => {
                         >
                             <polygon
                             points="-30,95 583,95 583,65"
-                            class="text-pink-600 fill-current"
+                            class="text-teal-600 fill-current"
                             ></polygon>
                         </svg>
                         <h4 class="text-xl font-bold text-white">
@@ -293,10 +216,10 @@ export const Page = () => {
                         src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
                     />
                     </div>
-                    <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                    <div class="w-full lg:w-5/12 mt-4 ml-auto mr-auto px-4">
                     <div class="md:pr-12">
                         <div
-                        class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
+                        class="text-teal-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-teal-300"
                         >
                         <i class="fas fa-rocket text-xl"></i>
                         </div>
@@ -311,7 +234,7 @@ export const Page = () => {
                             <div class="flex items-center">
                             <div>
                                 <span
-                                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200 mr-3"
                                 ><i class="fas fa-fingerprint"></i
                                 ></span>
                             </div>
@@ -326,7 +249,7 @@ export const Page = () => {
                             <div class="flex items-center">
                             <div>
                                 <span
-                                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200 mr-3"
                                 ><i class="fab fa-html5"></i
                                 ></span>
                             </div>
@@ -339,7 +262,7 @@ export const Page = () => {
                             <div class="flex items-center">
                             <div>
                                 <span
-                                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200 mr-3"
                                 ><i class="far fa-paper-plane"></i
                                 ></span>
                             </div>
@@ -371,7 +294,7 @@ export const Page = () => {
                     <div class="px-6">
                         <img
                         alt="..."
-                        src="./assets/img/team-1-800x800.jpg"
+                        src="./assets/img/sweet-board.jpg"
                         class="shadow-lg rounded-full max-w-full mx-auto"
                         style="max-width: 120px;"
                         />
@@ -392,7 +315,7 @@ export const Page = () => {
                             >
                             <i class="fab fa-facebook-f"></i></button
                             ><button
-                            class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                            class="bg-teal-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                             type="button"
                             >
                             <i class="fab fa-dribbble"></i>
@@ -405,7 +328,7 @@ export const Page = () => {
                     <div class="px-6">
                         <img
                         alt="..."
-                        src="./assets/img/team-2-800x800.jpg"
+                        src="./assets/img/sweet-board.jpg"
                         class="shadow-lg rounded-full max-w-full mx-auto"
                         style="max-width: 120px;"
                         />
@@ -434,7 +357,7 @@ export const Page = () => {
                     <div class="px-6">
                         <img
                         alt="..."
-                        src="./assets/img/team-3-800x800.jpg"
+                        src="./assets/img/sweet-board.jpg"
                         class="shadow-lg rounded-full max-w-full mx-auto"
                         style="max-width: 120px;"
                         />
@@ -468,7 +391,7 @@ export const Page = () => {
                     <div class="px-6">
                         <img
                         alt="..."
-                        src="./assets/img/team-4-470x470.png"
+                        src="./assets/img/sweet-board.jpg"
                         class="shadow-lg rounded-full max-w-full mx-auto"
                         style="max-width: 120px;"
                         />
@@ -479,7 +402,7 @@ export const Page = () => {
                         </p>
                         <div class="mt-6">
                             <button
-                            class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                            class="bg-teal-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                             type="button"
                             >
                             <i class="fab fa-dribbble"></i></button
@@ -581,69 +504,11 @@ export const Page = () => {
                 </div>
                 </div>
             </section>
+
             <section class="relative block py-24 lg:pt-0 bg-gray-900">
-                <div class="container mx-auto px-4">
-                <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-                    <div class="w-full lg:w-6/12 px-4">
-                    <div
-                        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
-                    >
-                        <div class="flex-auto p-5 lg:p-10">
-                        <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-                        <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                            Complete this form and we will get back to you in 24 hours.
-                        </p>
-                        <div class="relative w-full mb-3 mt-8">
-                            <label
-                            class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                            for="full-name"
-                            >Full Name</label
-                            ><input
-                            type="text"
-                            class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                            placeholder="Full Name"
-                            style="transition: all 0.15s ease 0s;"
-                            />
-                        </div>
-                        <div class="relative w-full mb-3">
-                            <label
-                            class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                            for="email"
-                            >Email</label
-                            ><input
-                            type="email"
-                            class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                            placeholder="Email"
-                            style="transition: all 0.15s ease 0s;"
-                            />
-                        </div>
-                        <div class="relative w-full mb-3">
-                            <label
-                            class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                            for="message"
-                            >Message</label
-                            ><textarea
-                            rows="4"
-                            cols="80"
-                            class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                            placeholder="Type a message..."
-                            ></textarea>
-                        </div>
-                        <div class="text-center mt-6">
-                            <button
-                            class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                            type="button"
-                            style="transition: all 0.15s ease 0s;"
-                            >
-                            Send Message
-                            </button>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
+                <ContactUs/>
             </section>
+
             </main>
             <footer class="relative bg-gray-300 pt-8 pb-6">
             <div
@@ -684,7 +549,7 @@ export const Page = () => {
                     >
                         <i class="flex fab fa-facebook-square"></i></button
                     ><button
-                        class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                        class="bg-white text-teal-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                         type="button"
                     >
                         <i class="flex fab fa-dribbble"></i></button
