@@ -11,7 +11,6 @@ import {
 } from "./components/index.ts";
 
 export class Page extends Component {
-
     render() {
         return (
             <body class="text-gray-800 antialiased">

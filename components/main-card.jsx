@@ -22,7 +22,7 @@ export const MainCard = ({
                     <i class={ icon }></i>
                 </div>
                 <h6 class="text-xl font-semibold">{ title }</h6>
-                <p class="mt-2 mb-4 text-gray-600">
+                <p class="mt-2 mb-4 text-base text-gray-600">
                     { text }
                     <img class={"mt-2 rounded-lg mx-auto "+imgClass} src={ src } />
                 </p>
