@@ -372,6 +372,10 @@ body {
   line-height: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Akaya Kanadaka';
+}
+
 /**
  * 1. Prevent padding and border from affecting element width.
  *
@@ -1321,6 +1325,10 @@ select {
 .bg-lightBlue-600 {
   --tw-bg-opacity: 1;
   background-color: rgba(2, 132, 199, var(--tw-bg-opacity));
+}
+
+.bg-yellow {
+  background-color: #FFFC00;
 }
 
 .bg-teal-100 {

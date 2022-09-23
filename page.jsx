@@ -8,6 +8,7 @@ import {
     Navigation, 
     ContactUs,
     MainCard,
+    TeamMember,
 } from "./components/index.ts";
 
 export class Page extends Component {
@@ -71,7 +72,7 @@ export class Page extends Component {
                         <div class="flex flex-wrap">
                             <MainCard 
                                 title="Make Your Gathering Extraordinary"
-                                text="Children, adults, grandparents? Bring everyone together and create an help create the excitement in the air, and watch everyone's face light up with happiness."
+                                text="Children, adults, grandparents? Bring everyone together and create the excitement in the air, and watch everyone's face light up with happiness."
                                 icon="far fa-star"
                                 iconClass="text-white bg-red-400"
                                 src="./assets/img/grad-2022.jpg"
@@ -97,7 +98,7 @@ export class Page extends Component {
                                 <div
                                     class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
                                 >
-                                    <i class="fas fa-user-friends text-xl"></i>
+                                    <i class="fas fa-yin-yang text-xl"></i>
                                 </div>
                                 <h3 class="text-3xl mb-2 font-semibold leading-normal">
                                     Working with you is our pleasure
@@ -105,16 +106,17 @@ export class Page extends Component {
                                 <p
                                     class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
                                 >
-                                    Don't let your uses guess by attaching tooltips and popoves to
-                                    any element. Just make sure you enable them first via
-                                    JavaScript.
+                                    The best thing about serving charcuterie at your party is that there are no rules! You can keep it as simple as you like (just the cured meats maybe?) or dress it up with fresh or dried fruits, a variety of artisan breads and crackers, olives, spreads like honey, preserves or jams! You can also keep it budget friendly by setting out a small plate or go all out with a huge platter!
+                                </p>
+                                <p
+                                    class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+                                >
+                                    Dinner parties, Birthdays, Graduations, Weddings and more, something perfectly crafted with you in the center.
                                 </p>
                                 <p
                                     class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
                                 >
-                                    The kit comes with three pre-built pages to help you get started
-                                    faster. You can change the text and images and you're good to
-                                    go. Just make sure you enable them first via JavaScript.
+                                    Whether you want a charcuterie board for 2 or a grazing table for 300, we have you covered! Our spreads will give your events, regardless of size, the WOW factor they deserve!
                                 </p>
                             </div>
                             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
@@ -138,12 +140,10 @@ export class Page extends Component {
                                             ></polygon>
                                         </svg>
                                         <h4 class="text-xl font-bold text-white">
-                                            Top Notch Services
+                                            Sweet, Savory, Delectable
                                         </h4>
                                         <p class="text-md font-light mt-2 text-white">
-                                            The Arctic Ocean freezes every winter and much of the
-                                            sea-ice then thaws every summer, and that process will
-                                            continue whatever happens.
+                                            We hand pick and arrange a curation of the best cheese, meat, fruit, honey, and anything else to make your event a splash. Guaranteed to be a hit with all ages and leave you wanted to come back for more!
                                         </p>
                                     </blockquote>
                                 </div>
@@ -182,53 +182,46 @@ export class Page extends Component {
                         </div>
                         <div class="w-full md:w-5/12 mt-4 ml-auto mr-auto px-4">
                         <div class="md:pr-12">
-                            <div class="text-teal-600 text-center inline-flex items-center justify-center w-1/2 mb-6 shadow-lg">
+                            <div class="text-center inline-flex items-center justify-center w-1/2 mb-6 shadow-lg">
                                 <img class="rounded" src="https://cdn.britannica.com/14/4314-004-A1CFEB4A/state-flag-South-Carolina-Union-fort-palmetto-1861.jpg" 
                                 />
                             </div>
-                            <h3 class="text-3xl font-semibold">Born in the Low Country</h3>
+                            <h3 class="text-3xl font-semibold">Born in the Lowcountry</h3>
                             <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                                Something pretty here about SC and its inspirations, Something pretty here about SC and its inspirations, Something pretty here about SC and its inspirations,
+                                The Lowcountry teems with life from the Atlantic, and for centuries our local cooks have turned to the water for culinary inspiration.
                             </p>
                             <ul class="list-none mt-6">
                             <li class="py-2">
                                 <div class="flex items-center">
                                 <div>
-                                    <span
-                                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200 mr-3"
-                                    ><i class="fas fa-fingerprint"></i
-                                    ></span>
+                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-gray-200 mr-3"
+                                    ><i class="fas fa-fingerprint"></i></span>
                                 </div>
                                 <div>
-                                    <h4 class="text-gray-600">
-                                    Carefully crafted components
-                                    </h4>
+                                    <h4 class="text-gray-600"> One of a kind, every time </h4>
                                 </div>
                                 </div>
                             </li>
                             <li class="py-2">
                                 <div class="flex items-center">
                                 <div>
-                                    <span
-                                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200 mr-3"
-                                    ><i class="fab fa-html5"></i
-                                    ></span>
+                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-gray-200 mr-3"
+                                    ><i class="far fa-paper-plane"></i></span>
                                 </div>
                                 <div>
-                                    <h4 class="text-gray-600">Amazing page examples</h4>
+                                    <h4 class="text-gray-600"> Beautifully arranged to celebrate the ingredients </h4>
                                 </div>
                                 </div>
                             </li>
                             <li class="py-2">
                                 <div class="flex items-center">
                                 <div>
-                                    <span
-                                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200 mr-3"
-                                    ><i class="far fa-paper-plane"></i
+                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-gray-200 mr-3"
+                                    ><i class="fas fa-jedi"></i
                                     ></span>
                                 </div>
                                 <div>
-                                    <h4 class="text-gray-600">Dynamic components</h4>
+                                    <h4 class="text-gray-600"> Designed to celebrate </h4>
                                 </div>
                                 </div>
                             </li>
@@ -242,152 +235,24 @@ export class Page extends Component {
                     <div class="container mx-auto px-4">
                     <div class="flex flex-wrap justify-center text-center mb-24">
                         <div class="w-full lg:w-6/12 px-4">
-                        <h2 class="text-4xl font-semibold">Here are our heroes</h2>
-                        <p class="text-lg leading-relaxed m-4 text-gray-600">
+                        <h2 class="text-4xl font-semibold">The Team</h2>
+                        {/* <p class="text-lg leading-relaxed m-4 text-gray-600">
                             According to the National Oceanic and Atmospheric
                             Administration, Ted, Scambos, NSIDClead scentist, puts the
                             potentially record maximum.
-                        </p>
+                        </p> */}
                         </div>
                     </div>
-                    <div class="flex flex-wrap">
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                        <div class="px-6">
-                            <img
-                            alt="..."
-                            src="./assets/img/sweet-board.jpg"
-                            class="shadow-lg rounded-full max-w-full mx-auto"
-                            style="max-width: 120px;"
-                            />
-                            <div class="pt-6 text-center">
-                            <h5 class="text-xl font-bold">Ryan Tompson</h5>
-                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                                Web Developer
-                            </p>
-                            <div class="mt-6">
-                                <button
-                                class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-twitter"></i></button
-                                ><button
-                                class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-facebook-f"></i></button
-                                ><button
-                                class="bg-teal-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-dribbble"></i>
-                                </button>
-                            </div>
-                            </div>
+                        <div class="flex flex-wrap justify-center">
+                            <TeamMember 
+                                name="Dylan Charest"
+                                role="Executive Chef / Owner"
+                            />                           
+                            <TeamMember 
+                                name="Colin Placke"
+                                role="Web Developer"
+                            />                           
                         </div>
-                        </div>
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                        <div class="px-6">
-                            <img
-                            alt="..."
-                            src="./assets/img/sweet-board.jpg"
-                            class="shadow-lg rounded-full max-w-full mx-auto"
-                            style="max-width: 120px;"
-                            />
-                            <div class="pt-6 text-center">
-                            <h5 class="text-xl font-bold">Romina Hadid</h5>
-                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                                Marketing Specialist
-                            </p>
-                            <div class="mt-6">
-                                <button
-                                class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-google"></i></button
-                                ><button
-                                class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-facebook-f"></i>
-                                </button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                        <div class="px-6">
-                            <img
-                            alt="..."
-                            src="./assets/img/sweet-board.jpg"
-                            class="shadow-lg rounded-full max-w-full mx-auto"
-                            style="max-width: 120px;"
-                            />
-                            <div class="pt-6 text-center">
-                            <h5 class="text-xl font-bold">Alexa Smith</h5>
-                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                                UI/UX Designer
-                            </p>
-                            <div class="mt-6">
-                                <button
-                                class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-google"></i></button
-                                ><button
-                                class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-twitter"></i></button
-                                ><button
-                                class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-instagram"></i>
-                                </button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                        <div class="px-6">
-                            <img
-                            alt="..."
-                            src="./assets/img/sweet-board.jpg"
-                            class="shadow-lg rounded-full max-w-full mx-auto"
-                            style="max-width: 120px;"
-                            />
-                            <div class="pt-6 text-center">
-                            <h5 class="text-xl font-bold">Jenna Kardi</h5>
-                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                                Founder and CEO
-                            </p>
-                            <div class="mt-6">
-                                <button
-                                class="bg-teal-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-dribbble"></i></button
-                                ><button
-                                class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-google"></i></button
-                                ><button
-                                class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-twitter"></i></button
-                                ><button
-                                class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                type="button"
-                                >
-                                <i class="fab fa-instagram"></i>
-                                </button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </section>
                 <section class="pb-20 relative block bg-gray-900">
@@ -605,12 +470,10 @@ export class Page extends Component {
                     >
                     <div class="w-full lg:w-4/12 px-4 mx-auto text-center">
                         <div class="text-sm text-gray-600 font-semibold py-1">
-                        Copyright © 2019 Tailwind Starter Kit by
-                        <a
-                            href="https://www.creative-tim.com"
-                            class="text-gray-600 hover:text-gray-900"
-                            >Creative Tim</a
-                        >.
+                        PlackeTaffy - webpages
+                        <a href="#" class="ml-2 text-gray-500 hover:text-gray-900">
+                            Colin Placke
+                        </a>.
                         </div>
                     </div>
                     </div>

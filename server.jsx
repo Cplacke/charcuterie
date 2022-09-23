@@ -16,6 +16,7 @@ function App() {
       <head>
         <title> Charcuteire by Dylan </title>
         <link rel="stylesheet" href="./assets/styles/tailwind.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
       </head>
       <body>
