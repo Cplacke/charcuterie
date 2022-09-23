@@ -4663,7 +4663,7 @@ select {
 /** Text Scaling for Mobile `< lg:` */
 @media (max-width: 1024px) {
   :root {
-    --mobile-text-scale: 1.25;
+    --mobile-text-scale: 1.85;
   }
   .text-xs {
     font-size: calc(0.75rem * var(--mobile-text-scale)) !important;
