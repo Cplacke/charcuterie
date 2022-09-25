@@ -19,8 +19,8 @@ export const ContactUs = () => {
                                 <label
                                     class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                     for="full-name"
-                                >Full Name</label
-                                ><input
+                                > Full Name </label>
+                                <input id="order-form-name"
                                     type="text"
                                     class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                     placeholder="Full Name"
@@ -31,8 +31,8 @@ export const ContactUs = () => {
                                 <label
                                     class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                     for="email"
-                                >Email</label
-                                ><input
+                                > Email </label>
+                                <input id="order-form-email"
                                     type="email"
                                     class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                     placeholder="Email"
@@ -40,11 +40,10 @@ export const ContactUs = () => {
                                 />
                             </div>
                             <div class="relative w-full mb-3">
-                                <label
-                                    class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                     for="message"
-                                >Message</label
-                                ><textarea
+                                > Message </label>
+                                <textarea id="order-form-message"
                                     rows="4"
                                     cols="80"
                                     class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
@@ -52,7 +51,7 @@ export const ContactUs = () => {
                                 ></textarea>
                             </div>
                             <div class="text-center mt-6">
-                                <button
+                                <button id="order-form-submit"
                                     class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                                     type="button"
                                     style="transition: all 0.15s ease 0s;"

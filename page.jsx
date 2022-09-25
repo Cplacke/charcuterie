@@ -29,23 +29,25 @@ export class Page extends Component {
                     ></span>
                     </div>
                     <div class="container relative mx-auto">
-                    <div class="items-center flex flex-wrap">
-                        <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
-                            <h1 class="text-white font-semibold text-5xl">
-                                Charcuterie &amp; More by Dylan
-                            </h1>
-                            <p class="mt-4 mb-5 text-lg text-gray-300">
-                                This is a simple example of a Landing Page you can build using
-                                Tailwind Starter Kit. It features multiple CSS components
-                                based on the Tailwindcss design system.
-                            </p>
+                        <div class="items-center flex flex-wrap">
+                            <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
+                                <h1 class="text-white font-semibold text-5xl">
+                                    Charcuterie &amp; More by Dylan
+                                </h1>
+                                <p class="mt-4 mb-5 text-lg text-gray-300">
+                                    This is a simple example of a Landing Page you can build using
+                                    Tailwind Starter Kit. It features multiple CSS components
+                                    based on the Tailwindcss design system.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <button class="bg-amber-200 px-8 py-4 rounded text-xl mx-auto block mt-12"
-                        onClick={ () => window.document.querySelector('#order-form').scrollIntoView() }
-                        onclick="document.querySelector('#order-form').scrollIntoView()"
-                    > Order Now 
-                    </button>
+                        <button class="bg-amber-200 px-8 py-4 rounded text-xl mx-auto block mt-12"
+                            id="order-now-button"
+                            // click="dummy"
+                            // onClick={ () => window.document.querySelector('#order-form').scrollIntoView() }
+                            // onclick="document.querySelector('#order-form').scrollIntoView()"
+                        > Order Now 
+                        </button>
                     </div>
                     <div
                         class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
@@ -209,7 +211,7 @@ export class Page extends Component {
                                     ><i class="far fa-paper-plane"></i></span>
                                 </div>
                                 <div>
-                                    <h4 class="text-gray-600"> Beautifully arranged to celebrate the ingredients </h4>
+                                    <h4 class="text-gray-600"> Arranged artistically to showcase ingredients </h4>
                                 </div>
                                 </div>
                             </li>
@@ -276,9 +278,9 @@ export class Page extends Component {
                     </svg>
                     </div>
                     <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-                    <div id="order-form" class="flex flex-wrap text-center justify-center">
+                    <div class="flex flex-wrap text-center justify-center">
                         <div class="w-full lg:w-6/12 px-4">
-                        <h2 class="text-4xl font-semibold text-white">Build something</h2>
+                        <h2 class="text-4xl font-semibold text-white">Lets craft something delicious</h2>
                         <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
                             Put the potentially record low maximum sea ice extent tihs year
                             down to low ice. According to the National Oceanic and
@@ -286,7 +288,7 @@ export class Page extends Component {
                         </p>
                         </div>
                     </div>
-                    <div class="flex flex-wrap mt-12 justify-center">
+                    <div id="order-form" class="flex flex-wrap mt-12 justify-center">
                         <div class="w-full lg:w-3/12 px-4 text-center">
                         <div
                             class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
