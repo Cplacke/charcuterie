@@ -1,11 +1,15 @@
 // poor mans solution inject events in vanilla and form validation
 let formInputs;
 let formLabels;
+let errorBanner;
+let successBanner;
 
 window.document.addEventListener('DOMContentLoaded', () => {
 
     var orderNowButton = document.querySelector('#order-now-button');
     var orderForm = document.querySelector('#order-form');
+    errorBanner = document.querySelector('#order-form-error-banner');
+    successBanner = document.querySelector('#order-form-success-banner');
     formInputs = {
         name: document.querySelector('#order-form-name'),
         email: document.querySelector('#order-form-email'),
@@ -17,6 +21,7 @@ window.document.addEventListener('DOMContentLoaded', () => {
         email: document.querySelector('label[for="email"]'),
         message: document.querySelector('label[for="message"]'),
     };
+    clearValidation();
 
     orderNowButton.addEventListener('click', () => {
         orderForm.scrollIntoView({
@@ -41,6 +46,11 @@ window.document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: JSON.stringify(value)
             });
+
+            // TODO: only hide and show on 200 success
+            document.querySelector('#order-form-inputs').classList.add('hidden')
+            errorBanner.classList.add('hidden');
+            successBanner.classList.remove('hidden');
         }
     });
 })
@@ -58,12 +68,14 @@ const isFormValid = (value) => {
             formLabels[field].classList.add(redText);
             formInputs[field].classList.add('border');
             formInputs[field].classList.add('border-red-500');
+            errorBanner.classList.remove('hidden');
             return true;
         }
     })
     return !errors.find( err => err === true );
 }
 const clearValidation = () => {
+    errorBanner.classList.add('hidden');
     fields.forEach(field => {
         // remove red if present
         formLabels[field].classList.remove(redText);

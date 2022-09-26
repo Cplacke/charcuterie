@@ -42,7 +42,7 @@ const requestHandler = async (req) => {
   }
 
   if (pathname === '/email') {
-    throw new Error("501 Not Implemented: " + path);
+    throw new Error("501 Not Implemented: " + pathname);
   }
 
   const html = renderSSR(<App />);
