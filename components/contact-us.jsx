@@ -21,12 +21,14 @@ export const ContactUs = () => {
                                     Please complete all required fields in order to start a request
                                 </div>
                             </div>
-                            <div id="order-form-success-banner" class="hidden border border-green-500 text-green-500 bg-green-200 flex p-1">
+                            <div id="order-form-success-banner" class="hidden rounded border border-emerald-500 text-emerald-500 bg-emerald-200 flex p-1">
                                 <i class="w-2/12 p-3 text-xl fas fa-vote-yea"></i>
-                                <div class="w-10/12">
+                                <div class="w-10/12 py-2">
                                     <div>Request successfully submitted!</div>
-                                    <div>You should receive a confirmation email shortly. 
-                                    We will take a look and get back to you as soon as we can and begin planing with you!</div>
+                                    <div>
+                                        You should receive a confirmation email shortly. 
+                                        We will take a look and get back to you as soon as we can and begin planing with you!
+                                    </div>
                                 </div>
                             </div>
                             <div id="order-form-inputs">
