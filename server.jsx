@@ -32,13 +32,17 @@ function App() {
 
 const requestHandler = async (req) => {
   const { pathname } = new URL(req.url);
-  console.count('net-request', pathname);
+
   // handle custom asset resolution
   if (pathname.includes("/assets/")) {
     return await assetRouteHandler(pathname);
   }
   if (pathname.includes("/client/")) {
     return await assetRouteHandler(pathname);
+  }
+
+  if (pathname === '/email') {
+    throw new Error("501 Not Implemented: " + path);
   }
 
   const html = renderSSR(<App />);
