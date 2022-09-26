@@ -18,7 +18,7 @@ export class Page extends Component {
                 <Navigation/>
                 <main>
                 <div
-                    class="relative lg:m-height-20 lg:m-height-75 pt-16 pb-32 flex content-center items-center justify-center"
+                    class="relative md:m-height-20 lg:m-height-75 pt-16 pb-32 flex content-center items-center justify-center"
                 >
                     <div class="absolute top-0 w-full h-full bg-center bg-cover"
                         style="background-image: url('./assets/img/grad.jpg');"

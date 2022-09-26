@@ -10,7 +10,7 @@ export const ContactUs = () => {
                     <div
                         class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
                     >
-                        <div class="flex-auto p-5 lg:p-10">
+                        <div class="flex-auto p-5 lg:p-10 text-sm">
                             <h4 class="text-2xl font-semibold">Want to order from us?</h4>
                             <p class="leading-relaxed mt-1 mb-4 text-gray-600">
                                 Complete this form and we will get back to you in 48 hours.
