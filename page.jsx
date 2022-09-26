@@ -200,7 +200,7 @@ export class Page extends Component {
                                     ><i class="fas fa-fingerprint"></i></span>
                                 </div>
                                 <div>
-                                    <h4 class="text-gray-600"> One of a kind, every time </h4>
+                                    <h4 class="text-gray-600 text-sm"> One of a kind, every time </h4>
                                 </div>
                                 </div>
                             </li>
@@ -211,7 +211,7 @@ export class Page extends Component {
                                     ><i class="far fa-paper-plane"></i></span>
                                 </div>
                                 <div>
-                                    <h4 class="text-gray-600"> Arranged artistically to showcase ingredients </h4>
+                                    <h4 class="text-gray-600 text-sm"> Arranged artistically to showcase ingredients </h4>
                                 </div>
                                 </div>
                             </li>
@@ -223,7 +223,7 @@ export class Page extends Component {
                                     ></span>
                                 </div>
                                 <div>
-                                    <h4 class="text-gray-600"> Designed to celebrate </h4>
+                                    <h4 class="text-gray-600 text-sm"> Designed to celebrate </h4>
                                 </div>
                                 </div>
                             </li>
@@ -235,9 +235,9 @@ export class Page extends Component {
                 </section>
                 <section class="pt-20 pb-48">
                     <div class="container mx-auto px-4">
-                    <div class="flex flex-wrap justify-center text-center mb-24">
+                    <div class="flex flex-wrap justify-center text-center mb-6">
                         <div class="w-full lg:w-6/12 px-4">
-                        <h2 class="text-4xl font-semibold">The Team</h2>
+                        <h2 class="text-2xl font-semibold">The Team</h2>
                         {/* <p class="text-lg leading-relaxed m-4 text-gray-600">
                             According to the National Oceanic and Atmospheric
                             Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -298,7 +298,7 @@ export class Page extends Component {
                         <h6 class="text-xl mt-5 font-semibold text-white">
                             Excelent Services
                         </h6>
-                        <p class="mt-2 mb-4 text-gray-500">
+                        <p class="mt-2 mb-4 text-gray-500 text-sm">
                             Some quick example text to build on the card title and make up
                             the bulk of the card's content.
                         </p>
@@ -312,7 +312,7 @@ export class Page extends Component {
                         <h5 class="text-xl mt-5 font-semibold text-white">
                             Grow your market
                         </h5>
-                        <p class="mt-2 mb-4 text-gray-500">
+                        <p class="mt-2 mb-4 text-gray-500 text-sm">
                             Some quick example text to build on the card title and make up
                             the bulk of the card's content.
                         </p>
@@ -324,7 +324,7 @@ export class Page extends Component {
                             <i class="fas fa-lightbulb text-xl"></i>
                         </div>
                         <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
-                        <p class="mt-2 mb-4 text-gray-500">
+                        <p class="mt-2 mb-4 text-gray-500 text-sm">
                             Some quick example text to build on the card title and make up
                             the bulk of the card's content.
                         </p>
