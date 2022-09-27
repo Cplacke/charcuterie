@@ -1,24 +1,14 @@
-// import { SmtpClient } from "https://deno.land/x/denomailer/mod.ts";
 import { SmtpClient } from "https://deno.land/x/smtp/mod.ts";
-
-const connection = {
-    connection: {
-        hostname: 'smtp.gmail.com',
-        port: 465,
-        tls: true,
-        auth: {
-            user: 'placketaffy@gmail.com',
-            pass: 'wdussmuxbahqueih', // "deno-charcuterie" app credentials
-        },
-    },
-    debug: {
-        log: true,
-    }
-};
                     
-const client = new SmtpClient(connection);
-console.info('mailer client connected');
+const client  = new SmtpClient();
+await client.connectTLS({
+    hostname: "smtp.gmail.com",
+    port: 465,
+    username: 'placketaffy@gmail.com',
+    password: Deno.env.get('DENO_MAIL_PASS'), // "deno-charcuterie" g-mail app credentials
+});
 
+console.info('mailer client online ...');
 export const sendMail = async ({
     name,
     email,
@@ -26,34 +16,25 @@ export const sendMail = async ({
 }) => {
     try { 
         return client.send({
-            from: 'placketaffy@gmail.com',
-            to: "cplacke@gmail.com",
-            subject: `New Request form ${name}`,
-            // content: "...",
-            html: `<div>
+            from: 'charcuterie-by-dylan.deno.dev',
+            to: [ 
+                "plaketaffy@gmail.com",
+                // "dylancharest@gmail.com",
+                email,
+            ],
+            subject: `New Request from ${name}`,
+            content: `<div>
                 <h1> New inquiry from ${name} <h1/>
                 <h3> ${Date()} <h3/>
                 <h3> Requested Reply Email: ${email} <h3/>
                 <p>
-                    <span style="font-weight: 500"> Message: </span>
+                    <h3 style="font-weight: 500"> Message: </h3>
                     ${message}
                 </p>
             </div>`,
         });
+        console.info(`mail sent to ${name}:${email} - ${Date()}`);
     } catch (err) {
         console.error(err);
     }
 }
-
-console.info('sending mail ...');
-// try { 
-//     await sendMail({ 
-//         name: 'Colin Placke - TEST',
-//         email: 'colin@placke.com',
-//         message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-//     })
-// } catch (err) {
-//     console.error(err);
-// }
-
-console.info('MAIL SENT!');
