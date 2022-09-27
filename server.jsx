@@ -7,6 +7,7 @@
 import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
 import { h, renderSSR, render, hydrate } from "https://deno.land/x/nano_jsx@v0.0.33/mod.ts";
 import { assetRouteHandler } from "./helpers/asset-resolution.ts";
+import { sendMail } from "./helpers/mailer.ts";
 
 import { Page } from './page.jsx'
 
@@ -42,7 +43,13 @@ const requestHandler = async (req) => {
   }
 
   if (pathname === '/email') {
-    throw new Error("501 Not Implemented: " + pathname);
+    console.info(req.body);
+    let res = await sendMail(req.body);
+    return new Response(res, {
+      headers: {
+        "content-type": "application/json",
+      },
+    });
   }
 
   const html = renderSSR(<App />);
