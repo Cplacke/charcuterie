@@ -43,8 +43,9 @@ const requestHandler = async (req) => {
   }
 
   if (pathname === '/email') {
-    // let res = await sendMail(await req.body.json());
-    return new Response({ status: 501 }, {
+    const emailRequestBody = await req.json();
+    let res = await sendMail(emailRequestBody);
+    return new Response(res, {
       headers: {
         "content-type": "application/json",
       },

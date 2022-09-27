@@ -1,5 +1,6 @@
 import { SmtpClient } from "https://deno.land/x/smtp/mod.ts";
                     
+console.info('configuring mailer ...');
 const client  = new SmtpClient();
 await client.connectTLS({
     hostname: "smtp.gmail.com",
@@ -17,11 +18,7 @@ export const sendMail = async ({
     try { 
         return client.send({
             from: 'charcuterie-by-dylan.deno.dev',
-            to: [ 
-                "plaketaffy@gmail.com",
-                // "dylancharest@gmail.com",
-                email,
-            ],
+            to: "plaketaffy@gmail.com,"+email,
             subject: `New Request from ${name}`,
             content: `<div>
                 <h1> New inquiry from ${name} <h1/>
