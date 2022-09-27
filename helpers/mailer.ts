@@ -18,14 +18,14 @@ export const sendMail = async ({
     try { 
         return client.send({
             from: 'charcuterie-by-dylan.deno.dev',
-            to: "plaketaffy@gmail.com,"+email,
+            to: email,
             subject: `New Request from ${name}`,
             content: `<div>
                 <h1> New inquiry from ${name} <h1/>
                 <h3> ${Date()} <h3/>
                 <h3> Requested Reply Email: ${email} <h3/>
                 <p>
-                    <h3 style="font-weight: 500"> Message: </h3>
+                    <h3> Message: </h3>
                     ${message}
                 </p>
             </div>`,

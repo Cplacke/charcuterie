@@ -77,6 +77,7 @@ const isFormValid = (value) => {
         }
     })
     if (!emailRegex.test(formInputs.email.value)) {
+        formLabels.email.classList.remove(grayText);
         formLabels.email.classList.add(redText);
         errors.push(true);
     }
