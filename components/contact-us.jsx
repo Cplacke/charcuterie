@@ -15,7 +15,15 @@ export const ContactUs = () => {
                             <p class="leading-relaxed mt-1 mb-4 text-gray-600">
                                 Complete this form and we will get back to you in 48 hours.
                             </p>
-                            <div id="order-form-error-banner" class="border rounded border-red-500 text-red-500 bg-red-200 flex p-1">
+                            <div class="border rounded border-teal-500 text-teal-500 bg-teal-200 flex p-1">
+                                <i class="w-2/12 p-3 text-xl fas fa-exclamation-triangle"></i>
+                                <div class="w-10/12">
+                                    Email functionality is currently not working, sorry for the inconvenience. For the time being please 
+                                    contact <strong> dylan-charest@email.com </strong> with your name, contact email, and a summary of the 
+                                    event you want us to cater for.
+                                </div>
+                            </div>
+                            <div id="order-form-error-banner" class="hidden border rounded border-red-500 text-red-500 bg-red-200 flex p-1">
                                 <i class="w-2/12 p-3 text-xl fas fa-exclamation-triangle"></i>
                                 <div class="w-10/12">
                                     Please complete all required fields in order to start a request
@@ -37,7 +45,7 @@ export const ContactUs = () => {
                                         class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                         for="full-name"
                                     > Full Name </label>
-                                    <input id="order-form-name"
+                                    <input id="order-form-name" disabled
                                         type="text"
                                         class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                         placeholder="Full Name"
@@ -49,7 +57,7 @@ export const ContactUs = () => {
                                         class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                         for="email"
                                     > Email </label>
-                                    <input id="order-form-email"
+                                    <input id="order-form-email" disabled
                                         type="email"
                                         class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                         placeholder="Email"
@@ -60,7 +68,7 @@ export const ContactUs = () => {
                                     <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                         for="message"
                                     > Message </label>
-                                    <textarea id="order-form-message"
+                                    <textarea id="order-form-message" disabled
                                         rows="4"
                                         cols="80"
                                         class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
@@ -68,7 +76,7 @@ export const ContactUs = () => {
                                     ></textarea>
                                 </div>
                                 <div class="text-center mt-6">
-                                    <button id="order-form-submit"
+                                    <button id="order-form-submit" disabled
                                         class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                                         type="button"
                                         style="transition: all 0.15s ease 0s;"

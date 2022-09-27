@@ -39,13 +39,13 @@ window.document.addEventListener('DOMContentLoaded', () => {
         if ( isFormValid(value) ) {
             // submit email api & show success message
             console.info('FORM VALID!!!');
-            fetch('/email', {
-                method: 'POST', 
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(value)
-            });
+            // fetch('/email', {
+            //     method: 'POST', 
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(value)
+            // });
 
             // TODO: only hide and show on 200 success
             document.querySelector('#order-form-inputs').classList.add('hidden')

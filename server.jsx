@@ -7,7 +7,7 @@
 import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
 import { h, renderSSR, render, hydrate } from "https://deno.land/x/nano_jsx@v0.0.33/mod.ts";
 import { assetRouteHandler } from "./helpers/asset-resolution.ts";
-import { sendMail } from "./helpers/mailer.ts";
+// import { sendMail } from "./helpers/mailer.ts";
 
 import { Page } from './page.jsx'
 
@@ -42,15 +42,15 @@ const requestHandler = async (req) => {
     return await assetRouteHandler(pathname);
   }
 
-  if (pathname === '/email') {
-    const emailRequestBody = await req.json();
-    let res = await sendMail(emailRequestBody);
-    return new Response(res, {
-      headers: {
-        "content-type": "application/json",
-      },
-    });
-  }
+  // if (pathname === '/email') {
+  //   const emailRequestBody = await req.json();
+  //   let res = await sendMail(emailRequestBody);
+  //   return new Response(res, {
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //   });
+  // }
 
   const html = renderSSR(<App />);
   return new Response(html, {

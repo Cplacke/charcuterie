@@ -43,10 +43,7 @@ export class Page extends Component {
                         </div>
                         <button class="bg-amber-200 px-8 py-4 rounded text-xl mx-auto block mt-12"
                             id="order-now-button"
-                            // click="dummy"
-                            // onClick={ () => window.document.querySelector('#order-form').scrollIntoView() }
-                            // onclick="document.querySelector('#order-form').scrollIntoView()"
-                        > Order Now 
+                        > <h2 class="text-3xl">Order Now</h2>
                         </button>
                     </div>
                     <div
