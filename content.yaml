@@ -1,0 +1,73 @@
+header: 
+  title: Charcuterie & More by Dylan
+  # TODO: update title text with mission statement
+  text: This is a simple example of a Landing Page you can build using Tailwind Starter Kit. It features multiple CSS components based on the Tailwindcss design system.
+  img: ./assets/img/grad.jpg
+
+cards: 
+  - title: Make Your Gathering Extraordinary
+    text: Children, adults, grandparents? Bring everyone together and create the excitement in the air, and watch everyone's face light up with happiness.
+    icon: far fa-star
+    iconClass: text-white bg-red-400
+    img: ./assets/img/grad-2022.jpg
+
+  - title: Fresh, Local, Unforgettable
+    text: Your guests & our community are what's most important to us, and that your gathering is unforgettable and everyone can graze to their hearts content!
+    icon: fas fa-award
+    iconClass: text-white bg-blue-400
+    img: ./assets/img/charcute.jpg
+    imgClass: rounded-full mt-5
+
+  - title: Made Just for You
+    text: Our selection of boards, party platters, and grazing table all personalized for you and your event. We make sure everyone has something delicious to bring a smile to your face.
+    icon: fas fa-fingerprint
+    iconClass: text-white bg-green-400
+    img: ./assets/img/breakfast-board.jpg
+
+main: 
+  summary: 
+    title: Working with you is our pleasure
+    paragraphs:
+      - The best thing about serving charcuterie at your party is that there are no rules! You can keep it as simple as you like (just the cured meats maybe?) or dress it up with fresh or dried fruits, a variety of artisan breads and crackers, olives, spreads like honey, preserves or jams! You can also keep it budget friendly by setting out a small plate or go all out with a huge platter!
+      - Dinner parties, Birthdays, Graduations, Weddings and more, something perfectly crafted with you in the center.
+      - Whether you want a charcuterie board for 2 or a grazing table for 300, we have you covered! Our spreads will give your events, regardless of size, the WOW factor they deserve!
+  sideImage: 
+    title: Sweet, Savory, Delectable
+    text: We hand pick and arrange a curation of the best cheese, meat, fruit, honey, and anything else to make your event a splash. Guaranteed to be a hit with all ages and leave you wanted to come back for more!
+    img: ./assets/img/kids.jpg
+
+  origins:
+    title: Born in the Lowcountry
+    text: The Lowcountry teems with life from the Atlantic, and for centuries our local cooks have turned to the water for culinary inspiration.
+    bullets: 
+      - icon: fas fa-fingerprint
+        text: One of a kind, every time
+      - icon: far fa-paper-plane
+        text: Arranged artistically to showcase ingredients
+      - icon: fas fa-jedi
+        text: Designed to celebrate
+
+  team: 
+    title: The Team
+    members: 
+      - name: Dylan Charest
+        role: Executive Chef / Owner
+        # img: TODO: do we want images
+      - name: Colin Placke
+        role: Web Developer
+        # img: TODO: do we want images
+
+  contact: 
+    title: Lets craft something delicious
+    # TODO: refine text from filler
+    text: Put the potentially record low maximum sea ice extent tihs year down to low ice. According to the National Oceanic and Atmospheric Administration, Ted, Scambos.
+    items: 
+      - icon: fas fa-medal
+        title: Excellent Services
+        text: Some quick example text to build on the card title and make up the bulk of the card's content.
+      - icon: fas fa-poll
+        title: Grow your market
+        text: Some quick example text to build on the card title and make up the bulk of the card's content.
+      - icon: fas fa-lightbulb
+        title: Launch time
+        text: Some quick example text to build on the card title and make up the bulk of the card's content.
