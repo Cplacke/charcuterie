@@ -16,8 +16,7 @@ will be re-deployed in a matter of seconds. Ahh the future is great.
 
 you can access the most recent version @ https://charcuterie-by-dylan.deno.dev/
 
-### Dev Links
-
+## Dev Links
 #### Deno install
 You need to install the code tooling in order to run on your local machine.
 
