@@ -71,3 +71,22 @@ main:
       - icon: fas fa-lightbulb
         title: Launch time
         text: Some quick example text to build on the card title and make up the bulk of the card's content.
+
+gallery: 
+  title: Check our recent work!
+  text: TODO we can add a subtitle here
+  images: 
+    # - img: 
+      # TODO: optional --- title: title value for image
+      # TODO: optional --- text: description of the event and what it was 
+      # TODO: optional --- imgClass: additional css class to append to image
+    - img: ./assets/img/breakfast-board.jpg
+    - img: ./assets/img/fruit-and-cheese.jpg
+    - img: ./assets/img/grad.jpg
+      imgClass: 'lg:w-9/12 mx-auto'
+    - img: ./assets/img/grad-2022.jpg
+    - img: ./assets/img/grad-party.jpg
+    - img: ./assets/img/kids-party.jpg
+      imgClass: 'lg:w-9/12 mx-auto'
+    - img: ./assets/img/kids.jpg
+    - img: ./assets/img/sweet-board.jpg

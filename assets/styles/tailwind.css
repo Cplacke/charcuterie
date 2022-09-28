@@ -1565,6 +1565,12 @@ select {
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
 }
 
+.hover\:bg-amber-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  color: rgb(39, 39, 42);
+}
+
 .hover\:bg-orange-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 115, 22, var(--tw-bg-opacity));
@@ -1708,6 +1714,10 @@ select {
 .active\:bg-blueGray-800:active {
   --tw-bg-opacity: 1;
   background-color: rgba(30, 41, 59, var(--tw-bg-opacity));
+}
+
+.active\:text-gray-700:active {
+  color: rgba(63, 63, 70);
 }
 
 .bg-center {
@@ -2682,6 +2692,11 @@ select {
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -3541,7 +3556,7 @@ select {
 }
 
 .bottom-0 {
-  bottom: 0px;
+  bottom: -1px;
 }
 
 .left-0 {
@@ -4344,10 +4359,17 @@ select {
 
 .rotate-90 {
   --tw-rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 .rotate-180 {
   --tw-rotate: 180deg;
+  transform: rotate(180deg);
+}
+
+.rotate-270 {
+  --tw-rotate: 270;
+  transform: rotate(270deg);
 }
 
 .transition-all {
@@ -4904,6 +4926,10 @@ select {
 
   .lg\:w-9\/12 {
     width: 75%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:m-height-75 {

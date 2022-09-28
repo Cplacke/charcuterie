@@ -11,7 +11,7 @@ import { assetRouteHandler } from "./helpers/asset-resolution.ts";
 
 import { Page } from './page.jsx'
 
-function App() {
+function App({ path }) {
   return (
     <html>
       <head>
@@ -25,7 +25,7 @@ function App() {
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png" />
       </head>
       <body>
-        <Page />
+        <Page path={path}/>
       </body>
     </html>
   );
@@ -33,6 +33,7 @@ function App() {
 
 const requestHandler = async (req) => {
   const { pathname } = new URL(req.url);
+  // console.info(pathname);
 
   // handle custom asset resolution
   if (pathname.includes("/assets/")) {
@@ -52,7 +53,7 @@ const requestHandler = async (req) => {
   //   });
   // }
 
-  const html = renderSSR(<App />);
+  const html = renderSSR(<App path={pathname}/>);
   return new Response(html, {
     headers: {
       "content-type": "text/html",

@@ -6,6 +6,10 @@ let successBanner;
 
 window.document.addEventListener('DOMContentLoaded', () => {
 
+    if(window.location.pathname !== '/') {
+        return;
+    }
+
     var orderNowButton = document.querySelector('#order-now-button');
     var orderForm = document.querySelector('#order-form');
     errorBanner = document.querySelector('#order-form-error-banner');

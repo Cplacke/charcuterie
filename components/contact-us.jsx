@@ -15,22 +15,22 @@ export const ContactUs = () => {
                             <p class="leading-relaxed mt-1 mb-4 text-gray-600">
                                 Complete this form and we will get back to you in 48 hours.
                             </p>
-                            <div class="border rounded border-teal-500 text-teal-500 bg-teal-200 flex p-1">
-                                <i class="w-2/12 p-3 text-xl fas fa-exclamation-triangle"></i>
+                            <div class="border rounded border-teal-500 text-teal-500 bg-teal-200 flex p-2">
+                                <i class="w-2/12 p-3 text-xl my-auto fas fa-exclamation-triangle"></i>
                                 <div class="w-10/12">
                                     Email functionality is currently not working, sorry for the inconvenience. For the time being please 
                                     contact <strong> dylan-charest@email.com </strong> with your name, contact email, and a summary of the 
                                     event you want us to cater for.
                                 </div>
                             </div>
-                            <div id="order-form-error-banner" class="hidden border rounded border-red-500 text-red-500 bg-red-200 flex p-1">
-                                <i class="w-2/12 p-3 text-xl fas fa-exclamation-triangle"></i>
+                            <div id="order-form-error-banner" class="hidden border rounded border-red-500 text-red-500 bg-red-200 flex p-2">
+                                <i class="w-2/12 p-3 text-xl my-auto fas fa-exclamation-triangle"></i>
                                 <div class="w-10/12">
                                     Please complete all required fields in order to start a request
                                 </div>
                             </div>
-                            <div id="order-form-success-banner" class="hidden rounded border border-emerald-500 text-emerald-500 bg-emerald-200 flex p-1">
-                                <i class="w-2/12 p-3 text-xl fas fa-vote-yea"></i>
+                            <div id="order-form-success-banner" class="hidden rounded border border-emerald-500 text-emerald-500 bg-emerald-200 flex p-2">
+                                <i class="w-2/12 p-3 text-xl my-auto fas fa-vote-yea"></i>
                                 <div class="w-10/12 py-2">
                                     <div>Request successfully submitted!</div>
                                     <div>
