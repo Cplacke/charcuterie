@@ -1,17 +1,11 @@
 /** @jsx h */
 import { h } from "https://deno.land/x/nano_jsx@v0.0.33/mod.ts";
-import { YAMLtoJSON } from "https://deno.land/x/y2j/mod.ts";
 
-export const Gallery = () => {
+export const Gallery = ({ content }) => {
 
-    const content = JSON.parse(
-        YAMLtoJSON(
-            Deno.readTextFileSync('./content.yaml')
-        )
-    );
     const colorArray = [ 'amber', 'red', 'blue', 'emerald', 'purple', 'orange', 'indigo' ];
     const getGalleryBg = (index) => ( `bg-${colorArray[index % colorArray.length]}-200` );
-
+    
     return (
         <div id="gallery" class="bg-gray-300">
             <div class="relative md:m-height-20 lg:m-height-75 pt-16 pb-32 flex content-center items-center justify-center">

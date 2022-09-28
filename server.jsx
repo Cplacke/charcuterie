@@ -10,6 +10,15 @@ import { assetRouteHandler } from "./helpers/asset-resolution.ts";
 // import { sendMail } from "./helpers/mailer.ts";
 
 import { Page } from './page.jsx'
+import { YAMLtoJSON } from "https://deno.land/x/y2j/mod.ts";
+
+console.info('loading deployment page content ...');
+const content = JSON.parse(
+    YAMLtoJSON(
+      await Deno.readTextFile('./content.yaml')
+    )
+);
+console.info('content loaded.');
 
 function App({ path }) {
   return (
@@ -25,7 +34,7 @@ function App({ path }) {
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png" />
       </head>
       <body>
-        <Page path={path}/>
+        <Page path={path} content={content}/>
       </body>
     </html>
   );

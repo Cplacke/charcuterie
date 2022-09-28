@@ -10,13 +10,13 @@ import {
     Gallery,
 } from "./components/index.ts";
 
-export const Page  = ({ path }) => {
+export const Page  = ({ path, content }) => {
 
     const getComponentFromPath = (path) => {
         if (path === '/gallery') {
-            return <Gallery />;
+            return <Gallery content={content}/>;
         } else {
-            return <Home/>;
+            return <Home content={content}/>;
         }
     }
 

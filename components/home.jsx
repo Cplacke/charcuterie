@@ -9,14 +9,7 @@ import {
 } from "./index.ts";
 
 
-export const Home = () => {
-
-    const content = JSON.parse(
-        YAMLtoJSON(
-            Deno.readTextFileSync('./content.yaml')
-        )
-    );
-
+export const Home = ({ content }) => {
     return (
         <main>
             <div
