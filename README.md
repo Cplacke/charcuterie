@@ -1,6 +1,19 @@
 # Charcuterie & More by Dylan 
 a simple deno based web server to create a business store front
 
+# Editing content
+In order to edit or update the content of the page, with respect to text and images this has been built out
+with content in mind and to simplify that process with out a need to search through the codebase and worry 
+about keeping with syntax that could create issues.
+
+now you can simply commit the changes direct to the `content.yaml` file in the root of the project, there you
+will find all the text and images for the page, and text can be modified accordingly, along with images for the 
+Home and Gallery pages. Simply keep with the existing structure and conform the the [YAML Specification](https://www.tutorialspoint.com/yaml/index.htm)
+and no issues should arise.
+
+it's also always a good idea to run your changes locally to make sure everything still compiles and now issues
+are introduced in from a type-o or such.
+
 ## Running locally
 simply run the `start.sh` script or ...
 ```sh
