@@ -261,7 +261,7 @@ export const Home = ({ content }) => {
             </section>
 
             <section class="relative block py-24 lg:pt-0 bg-gray-900">
-                <ContactUs />
+                <ContactUs content={content} />
             </section>
 
         </main>

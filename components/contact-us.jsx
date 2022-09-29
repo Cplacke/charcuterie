@@ -2,7 +2,7 @@
 import { h } from "https://deno.land/x/nano_jsx@v0.0.33/mod.ts";
 
 
-export const ContactUs = () => {
+export const ContactUs = ({ content }) => {
     return (
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
@@ -19,7 +19,7 @@ export const ContactUs = () => {
                                 <i class="w-2/12 p-3 text-xl my-auto fas fa-exclamation-triangle"></i>
                                 <div class="w-10/12">
                                     Email functionality is currently not working, sorry for the inconvenience. For the time being please 
-                                    contact <strong> dylan-charest@email.com </strong> with your name, contact email, and a summary of the 
+                                    contact <strong> { content.main.contact.email } </strong> with your name, contact email, and a summary of the 
                                     event you want us to cater for.
                                 </div>
                             </div>

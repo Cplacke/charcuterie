@@ -26,7 +26,7 @@ cards:
 
 main: 
   summary: 
-    title: Working with you is our pleasure
+    title: Working with you is our pleasure 
     paragraphs:
       - The best thing about serving charcuterie at your party is that there are no rules! You can keep it as simple as you like (just the cured meats maybe?) or dress it up with fresh or dried fruits, a variety of artisan breads and crackers, olives, spreads like honey, preserves or jams! You can also keep it budget friendly by setting out a small plate or go all out with a huge platter!
       - Dinner parties, Birthdays, Graduations, Weddings and more, something perfectly crafted with you in the center.
@@ -61,6 +61,7 @@ main:
     title: Lets craft something delicious
     # TODO: refine text from filler
     text: Put the potentially record low maximum sea ice extent tihs year down to low ice. According to the National Oceanic and Atmospheric Administration, Ted, Scambos.
+    email: dylan-charest@gmail.com
     items: 
       - icon: fas fa-medal
         title: Excellent Services
