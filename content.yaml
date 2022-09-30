@@ -5,7 +5,7 @@ header:
   img: ./assets/img/grad.jpg
 
 cards: 
-  - title: Make Your Gathering Extraordinary
+  - title: Make Your Gathering Extra Special
     text: Children, adults, grandparents? Bring everyone together and create the excitement in the air, and watch everyone's face light up with happiness.
     icon: far fa-star
     iconClass: text-white bg-red-400
