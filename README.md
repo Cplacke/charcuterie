@@ -27,7 +27,7 @@ This app is deployed using [Deno Deploy](https://deno.com/deploy) with the free 
 deployed using GitHooks, so whenever an update is made to the master branch, it is detected and will changes
 will be re-deployed in a matter of seconds. Ahh the future is great.
 
-you can access the most recent version @ https://charcuterie-by-dylan.deno.dev/
+you can access the most recent version @ https://charcuterieandmore.deno.dev/
 
 ## Dev Links
 #### Deno install
